@@ -69,3 +69,6 @@ fi
 # device
 TOUCHPAD_ID=`xinput | grep 'Synaptics TouchPad' | cut -f 2 | cut -f 2 -d =`
 xinput set-prop $TOUCHPAD_ID "Device Enabled" 0
+
+# Speed keyoard typing speed
+xset r rate 200 50
